@@ -90,7 +90,7 @@ function Search() {
                     </Link>
                   ))}
                 </div>
-                <div className=''>
+                <div className='contactButton'>
                 <Link to={`/profiles/${user.pseudo}`}>
                   <button className="contactIt">
                     Contacter
