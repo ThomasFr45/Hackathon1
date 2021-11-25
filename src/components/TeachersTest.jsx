@@ -14,38 +14,31 @@ const Teachers = () => {
         setSearch(e.target.value);
       }}
         />
-
-      <table className="table table-bordered">
-        <thead className='thead-dark'>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Gender</th>
-          </tr>
-        </thead>
-        <tbody>
+          <div className='cards'>
           {MockData.filter(val => {
             if (search === "") {
               return val;
             }
             else if (
-              val.first_name.toLowerCase().includes(search.toLowerCase()) ||
-              val.last_name.toLowerCase().includes(search.toLowerCase())
+              val.first_name?.toLowerCase().includes(search.toLowerCase()) ||
+              val.last_name?.toLowerCase().includes(search.toLowerCase()) ||
+              val.music?.toLowerCase().includes(search.toLowerCase()) 
             ){
               return val;
             }
-          }).map((m) => (
-            <tr key={m.id}>
-              <td>{m.first_name}</td>
-              <td>{m.last_name}</td>
-              <td>{m.email}</td>
-              <td>{m.gender}</td>
-              </tr>
-          ))}
-        </tbody>
-      </table>
-
+          }).map((user) => (
+            <div className="card">
+              <img className="userImage" src={user.picture} alt="" />
+              <div className="infos">
+                <img src={user.image} alt=""/>
+                <p>Prénom : {user.first_name}</p>
+                <p>Nom : {user.last_name}</p>
+                <p>Genre : {user.music}</p>
+              </div>
+              </div>
+          ))
+          }
+          </div>
     </div>
    );
 }
