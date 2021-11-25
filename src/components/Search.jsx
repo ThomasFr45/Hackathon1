@@ -47,7 +47,7 @@ function Search() {
         Vous pouvez rechercher ici parmis nos utilisateurs validés la personne
         qui vous convient le plus !
       </h4>
-      <div className="container">
+      <div className="containerSearch">
         {/* <input
           type="search"
           value={name}
@@ -65,6 +65,7 @@ function Search() {
           />
         </div>
 
+        <div className='searchBody'>
         {foundUsers && foundUsers.length > 0 ? (
           <div className="cards">
             {foundUsers.map((user) => (
@@ -89,7 +90,7 @@ function Search() {
                     </Link>
                   ))}
                 </div>
-                <div className='contactButton'>
+                <div className=''>
                 <Link to={`/profiles/${user.pseudo}`}>
                   <button className="contactIt">
                     Contacter
@@ -102,6 +103,7 @@ function Search() {
         ) : (
           <h4>Essais de rechercher ton genre de musique farovis !</h4>
         )}
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,17 @@
-.container {
+.containerSearch {
   padding-top: 30px;
-  margin: auto;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
 }
+
 .cards {
   display: grid;
   margin-top: 100px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   margin-bottom: 150px;
+  width: 90%;
 }
 @media (max-width: 700px) {
   .cards {
@@ -22,6 +26,10 @@
   .titleB {
     font-size: 0.9em
   }
+}
+
+.searchBody {
+  padding-left:10%
 }
 
 .select {
@@ -56,6 +64,9 @@ button a {
   .titleB {
     font-size: 0.9em;
   }
+  .searchBody {
+    padding-left:5%
+  }
 }
 
 .select {
@@ -75,7 +86,9 @@ button a {
     margin-right: auto;
     font-size:14px;
   }
-  
+  .searchBody {
+    padding-left: 2%
+  }
   .favMusics {
     padding: 20px;
     font-size:14px;
