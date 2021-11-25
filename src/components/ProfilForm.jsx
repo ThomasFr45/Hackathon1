@@ -1,9 +1,12 @@
 import { useState } from "react";
+import './ProfileForm.css';
 
 export const ProfilForm = () => {
 
   const [name, setName] = useState();
   const [firstName, setFirstName] = useState();
+  const [email, setEmail] = useState();
+  const [age, setAge] = useState();
   const [song, setSong] = useState();
   const [genres, setGenres] = useState([]);
 
@@ -12,13 +15,14 @@ export const ProfilForm = () => {
       ? setGenres(genres.filter((item) => item !== checkedGenre))
       : setGenres([...genres, checkedGenre])
   }
-  
 
   const sendData = (e) => {
     e.preventDefault();
     let formData = {
       name: name,
       firstName : firstName,
+      age: age,
+      email: email,
       genres: genres,
       song: song,
     }
@@ -27,45 +31,80 @@ export const ProfilForm = () => {
   }
 
   return (
-<div>
+<div className="container">
   <form onSubmit={(e) => sendData(e)}>
-    <label htmlFor="Nom">Nom</label><br />
-    <input type="text" value={name} onChange={(e) => setName(e.target.value)}/><br />
-    <label htmlFor="Prénom">Prénom</label><br />
-    <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} /><br />
-    <label htmlFor="favoriteSong">Vos genres préférés</label><br />
-    <input type="checkbox" value={genres} onChange={() => handleGenres('rock')} />
-    <label htmlFor="">Rock</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('hiphop')} />
-    <label htmlFor="">Hiphop</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('rap')} />
-    <label htmlFor="">Rap</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('raggae')} />
-    <label htmlFor="">Raggae</label>
+    <input 
+      type="text" 
+      placeholder="Votre nom" 
+      value={name} 
+      onChange={(e) => setName(e.target.value)}/>
+    <input 
+      type="text" 
+      placeholder="Votre prénom" 
+      value={firstName} 
+      onChange={(e) => setFirstName(e.target.value)} />
+   <input 
+      type="text" 
+      placeholder="Votre chanson du moment" 
+      value={song} 
+      onChange={(e) => setSong(e.target.value)} /><br />
+    <input 
+      type="text" 
+      placeholder="Votre email" 
+      value={email} 
+      onChange={(e) => setEmail(e.target.value)}/>
+    <input 
+      type="text" 
+      placeholder="Votre âge" 
+      value={age} 
+      onChange={(e) => setAge(e.target.value)}/>
     <br />
-    <input type="checkbox" value={genres} onChange={() => handleGenres('funk')} />
-    <label htmlFor="">Funk</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('pop')} />
-    <label htmlFor="">Pop</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('jazz')} />
-    <label htmlFor="">Jazz</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('electronic')} />
-    <label htmlFor="">Electronic</label>
-    <br />
-    <input type="checkbox" value={genres} onChange={() => handleGenres('classical')} />
-    <label htmlFor="">Classical</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('latin')} />
-    <label htmlFor="">Latin</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('soul')} />
-    <label htmlFor="">Soul</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('country')} />
-    <label htmlFor="">Country</label>
-    <input type="checkbox" value={genres} onChange={() => handleGenres('blues')} />
-    <label htmlFor="">Blues</label>
-    <br />
-    <label htmlFor="favoriteSong">Votre chanson du moment:</label><br />
-    <input type="text" value={song} onChange={(e) => setSong(e.target.value)} /><br />
-    <button type="submit">C'est parti!</button>
+
+<label className="genreTitle" htmlFor="favoriteSong">Sélectionnez vos genres préférés</label><br />
+    <div className="genres">
+
+      <button 
+        className={genres.includes("rock")? "genreButton" : "genreButtonClicked"} 
+        onClick={() => handleGenres('rock')}>Rock</button>
+      <button 
+        className={genres.includes("hiphop")? "genreButton" : "genreButtonClicked"} 
+        onClick={() => handleGenres('hiphop')}>Hiphop</button>
+      <button 
+        className={genres.includes("rap")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('rap')}>Rap</button>
+      <button 
+        className={genres.includes("raggae")? "genreButton" : "genreButtonClicked"} 
+        onClick={() => handleGenres('raggae')}>Raggae</button>
+      <button 
+        className={genres.includes("funk")? "genreButton" : "genreButtonClicked"} 
+        onClick={() => handleGenres('funk')}>Funk</button>
+      <button 
+        className={genres.includes("pop")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('pop')}>Pop</button>
+      <button 
+        className={genres.includes("jazz")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('jazz')}>Jazz</button>
+      <button 
+        className={genres.includes("electronic")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('electronic')}>Electronique</button>
+      <button 
+        className={genres.includes("classical")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('classical')}>Classique</button>
+      <button 
+        className={genres.includes("latin")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('latin')}>Latine</button>
+      <button 
+        className={genres.includes("soul")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('soul')}>Soul</button>
+      <button 
+        className={genres.includes("country")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('country')}>Country</button>
+      <button 
+       className={genres.includes("blues")? "genreButton" : "genreButtonClicked"}
+         onClick={() => handleGenres('blues')}>Blues</button>
+      <br />
+    </div>
+    <button className="submitButton" type="submit">Go!</button>
   </form>
 </div>
   );

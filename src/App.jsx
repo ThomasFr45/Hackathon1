@@ -12,7 +12,7 @@ function App() {
       <div className="content-wrap">
         <Router>
           <Navbar />
-          <Banniere title="Premier Hackathon avec la team plop !" />
+          <Banniere title="Donnez-nous vos préférences !" />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/profiles" element={<Profiles />} />
