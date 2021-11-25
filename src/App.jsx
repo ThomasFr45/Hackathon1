@@ -7,7 +7,8 @@ import Lyrics from './components/Lyrics';
 import About from './components/About';
 import "./App.css";
 import "./components/Search.css";
-import './components/lyrics.css'
+import './components/lyrics.css';
+import { ProfilForm } from './components/ProfilForm';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/profiles" element={<ProfilForm />} />
             <Route path="/:artist/:title" element={<Lyrics />} />
           </Routes>
         </Router>
