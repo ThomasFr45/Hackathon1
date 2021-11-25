@@ -1,13 +1,16 @@
 
 .container {
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex; 
+  flex-direction: column;
+  width: 65%; 
+  padding-bottom: 3em;
+  justify-content: center;
+
 }
 
 form {
   background: rgba(255,255,255,0.3);
-  padding: 3em;
+  padding: 2em;
   border-radius: 20px;
   border-left: 1px solid rgba(255,255,255,0.3);;
   border-top: 1px solid rgba(255,255,255,0.3);;
@@ -42,8 +45,8 @@ input {
   }
 
   .genres {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+   display: flex;
+   flex-wrap: wrap;
     padding-bottom: 2rem;
     justify-content: center;
   }
@@ -52,8 +55,8 @@ input {
     font-weight: bold;
   }
 
-  .genreButton {
-    background: transparent;
+  .genreButton, 
+  .genreButtonClicked {
   padding: 1em;
   margin-bottom: 2em;
   margin: 1rem;
@@ -62,37 +65,28 @@ input {
   border-top: 1px solid rgba(255,255,255,0.3);
   border-radius: 5000px;
   backdrop-filter: blur(5px);
-  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  width: 8em;
   }
 
-  .genreButton:hover {
+    .genreButton {
+      background: transparent;
+      box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    }
+  
+    .genreButton:hover {
     background: rgba(255,255,255,0.1);
     box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
-  }
+    }
 
-  .genreButtonClicked {
-    padding: 1em;
-    margin-bottom: 2em;
-    margin: 1rem;
-    border: none;
-    border-left: 1px solid rgba(255,255,255,0.3);
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-radius: 5000px;
-    backdrop-filter: blur(5px);
-    color: #fff;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    .genreButtonClicked {
     background: rgba(255,255,255,0.3);
     box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
   }
-
 
   .submitButton {
       height: 4rem;
@@ -116,7 +110,16 @@ input {
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
       }
 
-
+      @media (max-width:900px) {
+        .container{
+          width: 95%;
+        }
+        form {
+          padding: 0;
+        }
+        
+}
+  
 
   
 
