@@ -3,7 +3,9 @@ import Navbar from "./components/Navbar";
 import Banniere from "./components/Banniere";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Lyrics from './components/Lyrics'
 import "./App.css";
+import "./components/lyrics.css";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Banniere title="Premier Hackathon avec la team plop !" />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/:artist/:title" element={<Lyrics />} />
           </Routes>
         </Router>
       </div>
