@@ -33,8 +33,6 @@ export const ProfilForm = () => {
   }
 
   return (
-<div>
-<Banniere title="Premier Hackathon avec la team plop !" />
 <div className="container">
   <form onSubmit={(e) => sendData(e)}>
     <input 
@@ -110,7 +108,6 @@ export const ProfilForm = () => {
     </div>
     <button className="submitButton" type="submit">Go!</button>
   </form>
-</div>
 </div>
   );
 }
