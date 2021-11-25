@@ -39,11 +39,11 @@ function Search() {
 
   return (
     <div>
-      <h3 className='title'>
+      <h3 className="title">
         A la recherche de la personne parfaite pour écouter de la musique ou
         discuter de vos musiques préférés ensemble ? Vous êtes au bon endroit !
       </h3>
-      <h4 className='titleB'>
+      <h4 className="titleB">
         Vous pouvez rechercher ici parmis nos utilisateurs validés la personne
         qui vous convient le plus !
       </h4>
@@ -55,21 +55,21 @@ function Search() {
           className="input"
           placeholder="Search Match"
         /> */}
-        <div className='select'>
-        <Select
-          //isMulti
-          options={options}
-          className="basic-multi-select"
-          classNamePrefix="select"
-          onChange={filter}
-        />
+        <div className="select">
+          <Select
+            //isMulti
+            options={options}
+            className="basic-multi-select"
+            classNamePrefix="select"
+            onChange={filter}
+          />
         </div>
 
         {foundUsers && foundUsers.length > 0 ? (
           <div className="cards">
             {foundUsers.map((user) => (
               <div className="card">
-                <img src={user.picture} alt="" />
+                <img className="userImage" src={user.picture} alt="" />
                 <div className="infos">
                   <p>Pseudo : {user.pseudo}</p>
                   <p>Genre : {user.gender}</p>
