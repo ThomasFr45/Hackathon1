@@ -28,14 +28,17 @@ const Teachers = () => {
             }
           }).map((user) => (
             <div className="card">
-              <img className="userImage" src={user.picture} alt="" />
+              <div>
+                <img className="userImage" src={user.image} alt="" />
+                </div>
               <div className="infos">
-                <img src={user.image} alt=""/>
                 <p>Prénom : {user.first_name}</p>
                 <p>Nom : {user.last_name}</p>
-                <p>Genre : {user.music}</p>
+                <p>Professeur : {user.music}</p>
+                <p>Description : {user.description}</p>
+                <p>Créneau : {user.creneau}</p>
               </div>
-              </div>
+            </div>
           ))
           }
           </div>
