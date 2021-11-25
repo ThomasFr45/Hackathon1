@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Banniere from './Banniere'
 
 export const ProfilForm = () => {
 
@@ -22,11 +23,13 @@ export const ProfilForm = () => {
       genres: genres,
       song: song,
     }
-    console.log(formData);
+    alert(`Merci ${name} pour votre message.`)
     localStorage.setItem("formData", JSON.stringify(formData));
   }
 
   return (
+<div>
+<Banniere title="Premier Hackathon avec la team plop !" />
 <div>
   <form onSubmit={(e) => sendData(e)}>
     <label htmlFor="Nom">Nom</label><br />
@@ -67,6 +70,7 @@ export const ProfilForm = () => {
     <input type="text" value={song} onChange={(e) => setSong(e.target.value)} /><br />
     <button type="submit">C'est parti!</button>
   </form>
+</div>
 </div>
   );
 }
