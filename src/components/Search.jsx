@@ -76,7 +76,7 @@ function Search() {
                   <p>Age : {user.age}</p>
                 </div>
                 <h4>Genres Favoris :</h4>
-                <div className="genres">
+                <div className="genresCard">
                   <p>{user.music}</p>
                 </div>
                 <div className="favMusics">
@@ -89,7 +89,11 @@ function Search() {
                     </Link>
                   ))}
                 </div>
-                <button className="contactIt">Contacter</button>
+                <button className="contactIt">
+                <Link to={`/profiles/${user.pseudo}`}>
+                  Contacter
+                </Link>
+                </button>
               </div>
             ))}
           </div>
