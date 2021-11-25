@@ -25,6 +25,12 @@
     }
   }
 
+  .select {
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   @media (min-width: 701px) and (max-width: 1200px) {
     .cards {

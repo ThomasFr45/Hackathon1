@@ -55,6 +55,7 @@ function Search() {
           className="input"
           placeholder="Search Match"
         /> */}
+        <div className='select'>
         <Select
           //isMulti
           options={options}
@@ -62,6 +63,7 @@ function Search() {
           classNamePrefix="select"
           onChange={filter}
         />
+        </div>
 
         {foundUsers && foundUsers.length > 0 ? (
           <div className="cards">
