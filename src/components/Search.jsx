@@ -18,7 +18,7 @@ const USERS = [
 
 function Search() {
   const [name, setName] = useState('');
-  const [foundUsers, setFoundUsers] = useState(USERS);
+  const [foundUsers, setFoundUsers] = useState();
 
   const filter = (e) => {
     const keyword = e.target.value;
@@ -30,7 +30,7 @@ function Search() {
       });
       setFoundUsers(results);
     } else {
-      setFoundUsers(USERS);
+      setFoundUsers('');
       
     }
 
@@ -44,7 +44,7 @@ function Search() {
         value={name}
         onChange={filter}
         className="input"
-        placeholder="Filter"
+        placeholder="Search Match"
       />
 
       <div className="user-list">
@@ -57,7 +57,7 @@ function Search() {
             </li>
           ))
         ) : (
-          <h1>No results found!</h1>
+          <h1>No match found!</h1>
         )}
       </div>
     </div>
