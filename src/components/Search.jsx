@@ -11,7 +11,7 @@ const USERS = [
     pseudo: "Alexandre",
     age: 20,
     picture: "https://randomuser.me/api/portraits/men/29.jpg",
-    music: ["jazz", "blues"],
+    music: "jazz , blues",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const USERS = [
     pseudo: "Felix",
     age: 24,
     picture: "https://randomuser.me/api/portraits/men/30.jpg",
-    music: ["hiphop", "rap"],
+    music: "hiphop , rap",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const USERS = [
     pseudo: "Jack",
     age: 27,
     picture: "https://randomuser.me/api/portraits/men/31.jpg",
-    music: ["raggae", "funk"],
+    music: "raggae , funk",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const USERS = [
     pseudo: "Marc",
     age: 30,
     picture: "https://randomuser.me/api/portraits/men/32.jpg",
-    music: ["pop", "rock"],
+    music: "pop , rock",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const USERS = [
     pseudo: "Philippe",
     age: 32,
     picture: "https://randomuser.me/api/portraits/men/33.jpg",
-    music: ["raggae", "jazz"],
+    music: "raggae , jazz",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const USERS = [
     pseudo: "André",
     age: 35,
     picture: "https://randomuser.me/api/portraits/men/34.jpg",
-    music: ["classical", "electronic"],
+    music: "classical , electronic",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const USERS = [
     pseudo: "Paul",
     age: 37,
     picture: "https://randomuser.me/api/portraits/men/35.jpg",
-    music: ["electronic", "rock"],
+    music: "electronic , rock",
   },
   {
     id: 8,
@@ -67,7 +67,7 @@ const USERS = [
     pseudo: "Esteban",
     age: 40,
     picture: "https://randomuser.me/api/portraits/men/36.jpg",
-    music: ["funk", "latin"],
+    music: "funk , latin",
   },
   {
     id: 9,
@@ -75,7 +75,7 @@ const USERS = [
     pseudo: "Louis",
     age: 45,
     picture: "https://randomuser.me/api/portraits/men/37.jpg",
-    music: ["soul", "country"],
+    music: "soul , country",
   },
   {
     id: 10,
@@ -83,7 +83,7 @@ const USERS = [
     pseudo: "Peter",
     age: 70,
     picture: "https://randomuser.me/api/portraits/men/38.jpg",
-    music: ["blues", "rock"],
+    music: "blues , rock",
   },
   {
     id: 11,
@@ -91,7 +91,7 @@ const USERS = [
     pseudo: "Clara",
     age: 20,
     picture: "https://randomuser.me/api/portraits/women/30.jpg",
-    music: ["hiphop", "rock"],
+    music: "hiphop , rock",
   },
   {
     id: 12,
@@ -99,7 +99,7 @@ const USERS = [
     pseudo: "Alice",
     age: 25,
     picture: "https://randomuser.me/api/portraits/women/31.jpg",
-    music: ["funk", "rock"],
+    music: "funk , rock",
   },
   {
     id: 13,
@@ -107,7 +107,7 @@ const USERS = [
     pseudo: "Vanessa",
     age: 30,
     picture: "https://randomuser.me/api/portraits/women/32.jpg",
-    music: ["blues", "pop"],
+    music: "blues , pop",
   },
   {
     id: 14,
@@ -115,7 +115,7 @@ const USERS = [
     pseudo: "Eve",
     age: 35,
     picture: "https://randomuser.me/api/portraits/women/33.jpg",
-    music: ["latin", "jazz"],
+    music: "latin , jazz",
   },
   {
     id: 15,
@@ -123,7 +123,7 @@ const USERS = [
     pseudo: "Mathilde",
     age: 37,
     picture: "https://randomuser.me/api/portraits/women/34.jpg",
-    music: ["electronic", "country"],
+    music: "electronic , country",
   },
   {
     id: 16,
@@ -131,7 +131,7 @@ const USERS = [
     pseudo: "Elsa",
     age: 40,
     picture: "https://randomuser.me/api/portraits/women/35.jpg",
-    music: ["pop", "rock"],
+    music: "pop , rock",
   },
   {
     id: 17,
@@ -139,7 +139,7 @@ const USERS = [
     pseudo: "Louise",
     age: 45,
     picture: "https://randomuser.me/api/portraits/women/36.jpg",
-    music: ["raggae", "rock"],
+    music: "raggae , rock",
   },
   {
     id: 18,
@@ -147,7 +147,7 @@ const USERS = [
     pseudo: "Anaïs",
     age: 49,
     picture: "https://randomuser.me/api/portraits/women/37.jpg",
-    music: ["pop", "latin"],
+    music: "pop , latin",
   },
   {
     id: 19,
@@ -155,7 +155,7 @@ const USERS = [
     pseudo: "Suzie",
     age: 54,
     picture: "https://randomuser.me/api/portraits/women/38.jpg",
-    music: ["hiphop", "funk"],
+    music: "hiphop , funk",
   },
   {
     id: 20,
@@ -163,7 +163,7 @@ const USERS = [
     pseudo: "Vicky",
     age: 32,
     picture: "https://randomuser.me/api/portraits/women/39.jpg",
-    music: ["classical", "jazz"],
+    music: "classical , jazz",
   },
 ];
 
@@ -176,7 +176,7 @@ function Search() {
 
     if (keyword !== "") {
       const results = USERS.filter((user) => {
-        return user.name.toLowerCase().startsWith(keyword.toLowerCase());
+        return user.music.toLowerCase().includes(keyword.toLowerCase());
       });
       setFoundUsers(results);
     } else {
@@ -199,11 +199,18 @@ function Search() {
       <div className="user-list">
         {foundUsers && foundUsers.length > 0 ? (
           foundUsers.map((user) => (
-            <li key={user.id} className="user">
-              <span className="user-id">{user.id}</span>
-              <span className="user-name">{user.name}</span>
-              <span className="user-age">{user.age} age</span>
-            </li>
+            <div className="card">
+      <img src={user.picture} alt='' />
+      <div className='infos'>
+      <p>Pseudo : {user.pseudo}</p>
+      <p>Genre : {user.gender}</p>
+      <p>Age : {user.age}</p>
+      </div>
+      <h4>Genres Favoris :</h4>
+      <div className='genres'>
+        <p>{user.music}</p>
+      </div>
+    </div>
           ))
         ) : (
           <h1>No match found!</h1>

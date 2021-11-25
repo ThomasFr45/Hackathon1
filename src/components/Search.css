@@ -35,3 +35,45 @@
   .user-age {
     margin-left: auto;
   }
+
+  .card {
+    border: solid;
+    width: fit-content;
+    min-width: 250px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #333;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .infos {
+    font-size: 13px;
+  }
+  
+  .card img {
+    margin-top: 20px;
+    background-color: white;
+    max-width: 410px;
+    max-height: 250px;
+    border-radius: 20px;
+  }
+  
+  .genres {
+    display: flex;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+  }
+  
+  .favMusics {
+    padding: 20px;
+    font-size:14px;
+  }
+  
+  .genres p {
+    margin: 10px;
+  }
