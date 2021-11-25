@@ -3,9 +3,6 @@ import USERS from '../data.js';
 
 import "./Search.css";
 
-// This holds a list of some fiction people
-// Some  have the same name but different age and id
-
 function Search() {
   const [name, setName] = useState("");
   const [foundUsers, setFoundUsers] = useState();
