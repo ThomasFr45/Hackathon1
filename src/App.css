@@ -4,6 +4,7 @@ body {
   background-attachment: fixed;
   background-size: contain;
   color: rgb(173, 172, 172);
+  text-align: center;
 }
 
 .page-container {
