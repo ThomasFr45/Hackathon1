@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Banniere from './Banniere'
 import './ProfileForm.css';
 
 export const ProfilForm = () => {
@@ -26,11 +27,14 @@ export const ProfilForm = () => {
       genres: genres,
       song: song,
     }
-    console.log(formData);
+    alert(`Merci ${name} pour votre message`)
     localStorage.setItem("formData", JSON.stringify(formData));
+    console.log(formData)
   }
 
   return (
+<div>
+<Banniere title="Premier Hackathon avec la team plop !" />
 <div className="container">
   <form onSubmit={(e) => sendData(e)}>
     <input 
@@ -62,50 +66,50 @@ export const ProfilForm = () => {
 
 <label className="genreTitle" htmlFor="favoriteSong">Sélectionnez vos genres préférés</label><br />
     <div className="genres">
-
-      <button 
+      <div
         className={!genres.includes("rock")? "genreButton" : "genreButtonClicked"} 
-        onClick={() => handleGenres('rock')}>Rock</button>
-      <button 
+        onClick={() => handleGenres('rock')}>Rock</div>
+      <div
         className={!genres.includes("hiphop")? "genreButton" : "genreButtonClicked"} 
-        onClick={() => handleGenres('hiphop')}>Hiphop</button>
-      <button 
-        className={!genres.includes("rap")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('rap')}>Rap</button>
-      <button 
+        onClick={() => handleGenres('hiphop')}>Hiphop</div>
+      <div 
+        className={g!enres.includes("rap")? "genreButton" : "genreButtonClicked"}
+        onClick={() => handleGenres('rap')}>Rap</div>
+      <div 
         className={!genres.includes("raggae")? "genreButton" : "genreButtonClicked"} 
-        onClick={() => handleGenres('raggae')}>Raggae</button>
-      <button 
+        onClick={() => handleGenres('raggae')}>Raggae</div>
+      <div 
         className={!genres.includes("funk")? "genreButton" : "genreButtonClicked"} 
-        onClick={() => handleGenres('funk')}>Funk</button>
-      <button 
+        onClick={() => handleGenres('funk')}>Funk</div>
+      <div 
         className={!genres.includes("pop")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('pop')}>Pop</button>
-      <button 
+        onClick={() => handleGenres('pop')}>Pop</div>
+      <div 
         className={!genres.includes("jazz")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('jazz')}>Jazz</button>
-      <button 
+        onClick={() => handleGenres('jazz')}>Jazz</div>
+      <div 
         className={!genres.includes("electronic")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('electronic')}>Electronique</button>
-      <button 
+        onClick={() => handleGenres('electronic')}>Electronique</div>
+      <div 
         className={!genres.includes("classical")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('classical')}>Classique</button>
-      <button 
+        onClick={() => handleGenres('classical')}>Classique</div>
+      <div 
         className={!genres.includes("latin")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('latin')}>Latine</button>
-      <button 
+        onClick={() => handleGenres('latin')}>Latine</div>
+      <div 
         className={!genres.includes("soul")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('soul')}>Soul</button>
-      <button 
+        onClick={() => handleGenres('soul')}>Soul</div>
+      <div 
         className={!genres.includes("country")? "genreButton" : "genreButtonClicked"}
-        onClick={() => handleGenres('country')}>Country</button>
-      <button 
+        onClick={() => handleGenres('country')}>Country</div>
+      <div 
        className={!genres.includes("blues")? "genreButton" : "genreButtonClicked"}
-         onClick={() => handleGenres('blues')}>Blues</button>
+         onClick={() => handleGenres('blues')}>Blues</div>
       <br />
     </div>
     <button className="submitButton" type="submit">Go!</button>
   </form>
+</div>
 </div>
   );
 }

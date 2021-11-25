@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Banniere from "./components/Banniere";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import "./App.css";
-import { Profiles } from "./components/Profiles";
+import { ProfilForm } from './components/ProfilForm'
 
 function App() {
   return (
@@ -12,10 +11,9 @@ function App() {
       <div className="content-wrap">
         <Router>
           <Navbar />
-          <Banniere title="Donnez-nous vos préférences !" />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/profiles" element={<Profiles />} />
+            <Route path="/profiles" element={<ProfilForm />} />
           </Routes>
         </Router>
       </div> 
