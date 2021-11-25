@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Banniere from "./components/Banniere";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import "./App.css";
