@@ -66,43 +66,43 @@ export const ProfilForm = () => {
     <div className="genres">
 
       <div
-        className={genres.includes("rock")? "genreButton" : "genreButtonClicked"} 
+        className={!genres.includes("rock")? "genreButton" : "genreButtonClicked"} 
         onClick={() => handleGenres('rock')}>Rock</div>
       <div
-        className={genres.includes("hiphop")? "genreButton" : "genreButtonClicked"} 
+        className={!genres.includes("hiphop")? "genreButton" : "genreButtonClicked"} 
         onClick={() => handleGenres('hiphop')}>Hiphop</div>
       <div 
-        className={genres.includes("rap")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("rap")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('rap')}>Rap</div>
       <div 
-        className={genres.includes("raggae")? "genreButton" : "genreButtonClicked"} 
+        className={!genres.includes("raggae")? "genreButton" : "genreButtonClicked"} 
         onClick={() => handleGenres('raggae')}>Raggae</div>
       <div 
-        className={genres.includes("funk")? "genreButton" : "genreButtonClicked"} 
+        className={!genres.includes("funk")? "genreButton" : "genreButtonClicked"} 
         onClick={() => handleGenres('funk')}>Funk</div>
       <div 
-        className={genres.includes("pop")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("pop")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('pop')}>Pop</div>
       <div 
-        className={genres.includes("jazz")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("jazz")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('jazz')}>Jazz</div>
       <div 
-        className={genres.includes("electronic")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("electronic")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('electronic')}>Electronique</div>
       <div 
-        className={genres.includes("classical")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("classical")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('classical')}>Classique</div>
       <div 
-        className={genres.includes("latin")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("latin")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('latin')}>Latine</div>
       <div 
-        className={genres.includes("soul")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("soul")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('soul')}>Soul</div>
       <div 
-        className={genres.includes("country")? "genreButton" : "genreButtonClicked"}
+        className={!genres.includes("country")? "genreButton" : "genreButtonClicked"}
         onClick={() => handleGenres('country')}>Country</div>
       <div 
-       className={genres.includes("blues")? "genreButton" : "genreButtonClicked"}
+       className={!genres.includes("blues")? "genreButton" : "genreButtonClicked"}
          onClick={() => handleGenres('blues')}>Blues</div>
       <br />
     </div>
