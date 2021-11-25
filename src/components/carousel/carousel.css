@@ -6,14 +6,12 @@
 
 .container {
   position: relative;
-  width: 90%;
-  background-color: #9c7b7b;
-  
+  width: 100%;
 }
 
 .image {
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 10px;
 }
@@ -25,7 +23,7 @@
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 90%;
   opacity: 0;
   transition: .5s ease;
   background-color: #5bb1cea1;
@@ -34,6 +32,7 @@
 .container:hover .overlay {
   opacity: 0.7;
   border-radius: 10px;
+ 
 }
 
 .text {
