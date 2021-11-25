@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import USERS from "../data.js";
 import { Link } from "react-router-dom";
+import Select from "react-select";
 
 function Search() {
-  const [name, setName] = useState("");
+  //const [name, setName] = useState("");
   const [foundUsers, setFoundUsers] = useState();
 
   const filter = (e) => {
-    const keyword = e.target.value;
+    console.log(e);
+    const keyword = e.value;
 
     if (keyword !== "") {
       const results = USERS.filter((user) => {
@@ -18,8 +20,23 @@ function Search() {
       setFoundUsers("");
     }
 
-    setName(keyword);
+    //setName(keyword);
   };
+
+  const options = [
+    { value: "Pop", label: "Pop" },
+    { value: "HipHop", label: "HipHop" },
+    { value: "Raggae", label: "Raggae" },
+    { value: "Funk", label: "Funk" },
+    { value: "Rock", label: "Rock" },
+    { value: "Classique", label: "Classique" },
+    { value: "Electronic", label: "Electronic" },
+    { value: "Latin", label: "Latin" },
+    { value: "Soul", label: "Soul" },
+    { value: "Country", label: "Country" },
+    { value: "Blues", label: "Blues" },
+  ];
+
   return (
     <div>
       <h3 className='title'>
@@ -31,12 +48,19 @@ function Search() {
         qui vous convient le plus !
       </h4>
       <div className="container">
-        <input
+        {/* <input
           type="search"
           value={name}
           onChange={filter}
           className="input"
           placeholder="Search Match"
+        /> */}
+        <Select
+          //isMulti
+          options={options}
+          className="basic-multi-select"
+          classNamePrefix="select"
+          onChange={filter}
         />
 
         {foundUsers && foundUsers.length > 0 ? (
