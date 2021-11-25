@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import USERS from '../data.js';
+import { Link } from 'react-router-dom';
 
 import "./Search.css";
 
@@ -55,7 +56,7 @@ function Search() {
                 <div className="genres">
                   <p>{user.music}</p>
               </div>
-              <button className='contactIt'>Contacter</button>
+              <Link to={`/${user.pseudo}`}><button className='contactIt'>Contacter</button></Link>
               </div>
             ))}
             </div>

@@ -14,6 +14,7 @@ function App() {
           <Banniere title="Premier Hackathon avec la team plop !" />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/:pseudo" element={<Home />} />
           </Routes>
         </Router>
       </div>
