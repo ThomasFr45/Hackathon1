@@ -95,7 +95,7 @@ const USERS = [
     pseudo: "Clara",
     age: 20,
     picture: "https://randomuser.me/api/portraits/women/30.jpg",
-    music: "hiphop , rock",
+    music: "hiphop , soul",
     fav: " Outkast | Hey Ya! & Led Zeppelin | Whole Lotta Love ",
   },
   {
@@ -140,7 +140,7 @@ const USERS = [
     pseudo: "Elsa",
     age: 40,
     picture: "https://randomuser.me/api/portraits/women/35.jpg",
-    music: "pop , rock",
+    music: "pop , soul",
     fav: " Justin Timberlake | SexyBack  & The Rolling Stones | Sympathy for the Devil ",
   },
   {

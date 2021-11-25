@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import USERS from '../data.js';
+import USERS from "../data.js";
+import { Link } from "react-router-dom";
 
 import "./Search.css";
 
@@ -21,7 +22,6 @@ function Search() {
 
     setName(keyword);
   };
-
   return (
     <div>
       <h3>
@@ -41,10 +41,10 @@ function Search() {
           placeholder="Search Match"
         />
 
-          {foundUsers && foundUsers.length > 0 ? (
-            <div className="cards">
+        {foundUsers && foundUsers.length > 0 ? (
+          <div className="cards">
             {foundUsers.map((user) => (
-                <div className="card">
+              <div className="card">
                 <img src={user.picture} alt="" />
                 <div className="infos">
                   <p>Pseudo : {user.pseudo}</p>
@@ -54,17 +54,27 @@ function Search() {
                 <h4>Genres Favoris :</h4>
                 <div className="genres">
                   <p>{user.music}</p>
-              </div>
-              <button className='contactIt'>Contacter</button>
+                </div>
+                <div className="favMusics">
+                  <h4>Chansons favorites :</h4>
+                  {user.fav.split(" & ").map((music) => (
+                    <Link
+                      to={`/${music.split(" | ")[0]}/${music.split(" | ")[1]}`}
+                    >
+                      <p key={music}>{music}</p>
+                    </Link>
+                  ))}
+                </div>
+                <button className="contactIt">Contacter</button>
               </div>
             ))}
-            </div>
-          ) : (
-            <h4>Essais de rechercher ton genre de musique farovis !</h4>
-          )}
           </div>
-          </div>
-      );
+        ) : (
+          <h4>Essais de rechercher ton genre de musique farovis !</h4>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default Search;
