@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./ProfilForm.css"
 
 export const ProfilForm = () => {
 
@@ -28,7 +27,10 @@ export const ProfilForm = () => {
     <label htmlFor="Prénom">Prénom</label><br />
     <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} /><br />
     <label htmlFor="favoriteSong">Vos genres préférés</label><br />
-    <input type="text" value={genres} onChange={(e) => setGenres(e.target.value)} /><br />
+    <div>
+    <input type="checkbox" value={genres} onChange={(e) => setGenres(e.target.value)} />Rock
+    </div><br />
+    
     <label htmlFor="favoriteSong">Votre chanson du moment:</label><br />
     <input type="text" value={song} onChange={(e) => setSong(e.target.value)} /><br />
     <button type="submit">C'est parti!</button>
@@ -36,3 +38,6 @@ export const ProfilForm = () => {
 </div>
   );
 }
+
+
+        
