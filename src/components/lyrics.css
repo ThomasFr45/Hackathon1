@@ -1,0 +1,50 @@
+@media (min-width: 1200px) {
+  .Lyrics {
+    margin-bottom: 50px;
+    background-color: #333;
+    width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+}
+
+@media (min-width:700px) and (max-width:1200px) {
+  .Lyrics {
+    margin-bottom: 50px;
+    background-color: #333;
+    width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  h4 {
+    font-size: 0.95em
+  }
+  p {
+    font-size: 0.9em
+  }
+}
+
+@media (max-width: 700px) {
+.Lyrics {
+  margin-bottom: 50px;
+  background-color: #333;
+  width: 200px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+h4 {
+  font-size: 0.9em
+}
+p {
+  font-size: 0.85em
+}
+}

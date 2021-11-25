@@ -4,6 +4,7 @@ body {
   background-attachment: fixed;
   background-size: contain;
   color: rgb(173, 172, 172);
+  text-align: center;
 }
 
 .page-container {
@@ -37,6 +38,17 @@ li a {
   text-decoration: none;
 } 
 
+a {
+  display: block;
+  color: rgb(173, 172, 172);
+  text-align: center;
+  text-decoration: none;
+} 
+
+a:hover {
+  background-color: #111;
+}
+
 li a:hover {
   background-color: #111;
 }
@@ -53,7 +65,7 @@ li a:hover {
 
 @media (max-width: 700px) {
   .banniere {
-    font-size: 0.7em;
+    font-size: 0.75em;
   }
 }
 
