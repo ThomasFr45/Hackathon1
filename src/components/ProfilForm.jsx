@@ -33,7 +33,6 @@ export const ProfilForm = () => {
   }
 
   return (
-<div className="container">
   <form onSubmit={(e) => sendData(e)}>
     <input 
       type="text" 
@@ -64,7 +63,6 @@ export const ProfilForm = () => {
 
 <label className="genreTitle" htmlFor="favoriteSong">Sélectionnez vos genres préférés</label><br />
     <div className="genres">
-
       <div
         className={!genres.includes("rock")? "genreButton" : "genreButtonClicked"} 
         onClick={() => handleGenres('rock')}>Rock</div>
@@ -106,8 +104,11 @@ export const ProfilForm = () => {
          onClick={() => handleGenres('blues')}>Blues</div>
       <br />
     </div>
+    <div className="divMessage">
+      <label htmlFor="">Message</label>
+      <textarea className="message" name="message" rows="5"></textarea>
+    </div>
     <button className="submitButton" type="submit">Go!</button>
   </form>
-</div>
   );
 }
