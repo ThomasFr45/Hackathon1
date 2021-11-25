@@ -1,0 +1,117 @@
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+form {
+  background: rgba(255,255,255,0.3);
+  padding: 3em;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255,255,255,0.3);;
+  border-top: 1px solid rgba(255,255,255,0.3);;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+input {
+  background: transparent;
+  padding: 1em;
+  margin-bottom: 2em;
+  margin: 1rem;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5000px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+  
+  input:hover {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+
+  .genres {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .genreTitle {
+    font-weight: bold;
+  }
+
+  .genreButton {
+    background: transparent;
+  padding: 1em;
+  margin-bottom: 2em;
+  margin: 1rem;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5000px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .genreButton:hover {
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+
+  .genreButtonClicked {
+    padding: 1em;
+    margin-bottom: 2em;
+    margin: 1rem;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.3);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+  }
+
+
+  .submitButton {
+      height: 4rem;
+      width: 4rem;
+      font-size: 1rem;
+      border-radius: 50%;
+      background: rgb(148, 60, 148); 
+      color: white;
+      border-top: 0;
+      border-left: 0;
+  }
+      
+  .submitButton:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+      
+  .submitButton:active {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
