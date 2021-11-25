@@ -34,8 +34,8 @@ button a {
   color: black;
 }
 
-button a:hover{
-  background-color: white;
+.contactButton a:hover{
+  background-color: transparent;
 }
 
 .userImage:hover {
@@ -67,8 +67,7 @@ button a:hover{
 @media (min-width: 701px) and (max-width: 1200px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-=======
-  
+  }  
   .genresCard {
     display: flex;
     width:fit-content;
@@ -130,6 +129,12 @@ button a:hover{
   margin: 10px;
 }
 
+.contactButton {
+  width: 110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contactIt {
   border-radius: 8px;
   background-color: purple;
@@ -141,7 +146,7 @@ button a:hover{
   width: 110px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 36px;
+  margin: 0px;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
   cursor: pointer;
   display: inline-block;

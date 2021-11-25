@@ -89,11 +89,13 @@ function Search() {
                     </Link>
                   ))}
                 </div>
-                <button className="contactIt">
+                <div className='contactButton'>
                 <Link to={`/profiles/${user.pseudo}`}>
-                  Contacter
+                  <button className="contactIt">
+                    Contacter
+                  </button>
                 </Link>
-                </button>
+                </div>
               </div>
             ))}
           </div>
