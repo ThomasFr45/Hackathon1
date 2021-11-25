@@ -38,6 +38,17 @@ li a {
   text-decoration: none;
 } 
 
+a {
+  display: block;
+  color: rgb(173, 172, 172);
+  text-align: center;
+  text-decoration: none;
+} 
+
+a:hover {
+  background-color: #111;
+}
+
 li a:hover {
   background-color: #111;
 }
