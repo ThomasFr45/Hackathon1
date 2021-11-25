@@ -11,8 +11,6 @@ export const Profiles = () => {
           <p>{profiles.song}</p>
           {chosenGenres.map(item => 
           (<p>{item}</p>))}
-      
-     
     </div>
   )
 }
