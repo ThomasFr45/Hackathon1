@@ -1,0 +1,69 @@
+body {
+  background-color: #330055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%2338005b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e0161' cx='50' cy='100' r='50'/%3E%3Cg fill='%23430167' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2349026d' cx='50' cy='200' r='50'/%3E%3Cg fill='%234f0273' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23550379' cx='50' cy='300' r='50'/%3E%3Cg fill='%235b037f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23610485' cx='50' cy='400' r='50'/%3E%3Cg fill='%2367048b' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%236d0591' cx='50' cy='500' r='50'/%3E%3Cg fill='%23740597' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%237a059d' cx='50' cy='600' r='50'/%3E%3Cg fill='%238105a3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%238805a9' cx='50' cy='700' r='50'/%3E%3Cg fill='%238e05af' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%239504b5' cx='50' cy='800' r='50'/%3E%3Cg fill='%239c04bb' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a403c1' cx='50' cy='900' r='50'/%3E%3Cg fill='%23ab01c7' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23B200CD' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  color: rgb(173, 172, 172);
+}
+
+.page-container {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 0;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+
+li a:hover {
+  background-color: #111;
+}
+
+.banniere {
+  height: 250px;
+  margin: 0;
+}
+
+.banniere-h1 {
+  margin-top: 0;
+  padding-top: 90px;
+}
+
+@media (max-width: 700px) {
+  .banniere {
+    font-size: 0.7em;
+  }
+}
+
+footer {
+  background-color: #333;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
+}
