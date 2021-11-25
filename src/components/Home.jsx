@@ -1,8 +1,9 @@
 import { ProfilForm } from "./ProfilForm";
+import './Home.css';
 
 const Home = () => {
   return (
-  <div>
+  <div className="home">
     <ProfilForm />
   </div>
   )}
