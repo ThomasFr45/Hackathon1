@@ -65,8 +65,8 @@ function Search() {
           />
         </div>
 
-        <div className='searchBody'>
         {foundUsers && foundUsers.length > 0 ? (
+          <div className='searchBody'>
           <div className="cards">
             {foundUsers.map((user) => (
               <div className="card">
@@ -100,10 +100,10 @@ function Search() {
               </div>
             ))}
           </div>
+          </div>
         ) : (
           <h4>Essais de rechercher ton genre de musique farovis !</h4>
         )}
-        </div>
       </div>
     </div>
   );
