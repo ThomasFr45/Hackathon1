@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import USERS from "../data.js";
 import { Link } from "react-router-dom";
 
-import "./Search.css";
-
 function Search() {
   const [name, setName] = useState("");
   const [foundUsers, setFoundUsers] = useState();
@@ -24,11 +22,11 @@ function Search() {
   };
   return (
     <div>
-      <h3>
+      <h3 className='title'>
         A la recherche de la personne parfaite pour écouter de la musique ou
         discuter de vos musiques préférés ensemble ? Vous êtes au bon endroit !
       </h3>
-      <h4>
+      <h4 className='titleB'>
         Vous pouvez rechercher ici parmis nos utilisateurs validés la personne
         qui vous convient le plus !
       </h4>
