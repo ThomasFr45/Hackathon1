@@ -36,14 +36,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-} 
+}
 
 a {
   display: block;
   color: rgb(173, 172, 172);
   text-align: center;
   text-decoration: none;
-} 
+}
 
 a:hover {
   background-color: #111;
@@ -63,6 +63,12 @@ li a:hover {
   padding-top: 90px;
 }
 
+.teacherCards {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 700px) {
   .banniere {
     font-size: 0.75em;
@@ -74,17 +80,17 @@ footer {
   padding-top: 5px;
   padding-bottom: 30px;
   margin: 0;
-  margin-top:50px
+  margin-top: 50px;
 }
 
 footer p {
   margin: 0;
 }
 
-.card {
+.teacherCard {
+  width: 500px;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   padding-top: 20px;
   padding-bottom: 20px;
   border: solid;
@@ -96,7 +102,6 @@ footer p {
   border-radius: 30px;
   margin-bottom: 50px;
 }
-
 
 .userImage:hover {
   width: 160px;

@@ -65,44 +65,44 @@ function Search() {
           />
         </div>
 
-        <div className='searchBody'>
-        {foundUsers && foundUsers.length > 0 ? (
-          <div className="cards">
-            {foundUsers.map((user) => (
-              <div className="card">
-                <img className="userImage" src={user.picture} alt="" />
-                <div className="infos">
-                  <p>Pseudo : {user.pseudo}</p>
-                  <p>Genre : {user.gender}</p>
-                  <p>Age : {user.age}</p>
-                </div>
-                <h4>Genres Favoris :</h4>
-                <div className="genresCard">
-                  <p>{user.music}</p>
-                </div>
-                <div className="favMusics">
-                  <h4>Chansons favorites :</h4>
-                  {user.fav.split(" & ").map((music) => (
-                    <Link
-                      to={`/${music.split(" | ")[0]}/${music.split(" | ")[1]}`}
-                    >
-                      <p key={music}>{music}</p>
+        <div className="searchBody">
+          {foundUsers && foundUsers.length > 0 ? (
+            <div className="userCards">
+              {foundUsers.map((user) => (
+                <div className="userCard">
+                  <img className="userImage" src={user.picture} alt="" />
+                  <div className="infos">
+                    <p>Pseudo : {user.pseudo}</p>
+                    <p>Genre : {user.gender}</p>
+                    <p>Age : {user.age}</p>
+                  </div>
+                  <h4>Genres Favoris :</h4>
+                  <div className="genresCard">
+                    <p>{user.music}</p>
+                  </div>
+                  <div className="favMusics">
+                    <h4>Chansons favorites :</h4>
+                    {user.fav.split(" & ").map((music) => (
+                      <Link
+                        to={`/${music.split(" | ")[0]}/${
+                          music.split(" | ")[1]
+                        }`}
+                      >
+                        <p key={music}>{music}</p>
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="contactButton">
+                    <Link to={`/profiles/${user.pseudo}`}>
+                      <button className="contactIt">Contacter</button>
                     </Link>
-                  ))}
+                  </div>
                 </div>
-                <div className='contactButton'>
-                <Link to={`/profiles/${user.pseudo}`}>
-                  <button className="contactIt">
-                    Contacter
-                  </button>
-                </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <h4>Essais de rechercher ton genre de musique farovis !</h4>
-        )}
+              ))}
+            </div>
+          ) : (
+            <h4>Essais de rechercher ton genre de musique farovis !</h4>
+          )}
         </div>
       </div>
     </div>

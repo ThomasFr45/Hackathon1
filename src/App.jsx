@@ -20,14 +20,12 @@ function App() {
           <Banniere title="Premier Hackathon avec la team plop !" />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/teachers" element={<Teachers />} />
             <Route path="/about" element={<About />} />
             <Route path="/profiles/:pseudo" element={<ProfilForm />} />
             <Route path="/:artist/:title" element={<Lyrics />} />
           </Routes>
         </Router>
-        <div>
-          <Teachers />
-        </div>
       </div>
       <Footer />
     </div>

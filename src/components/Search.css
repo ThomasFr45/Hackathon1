@@ -1,11 +1,11 @@
 .containerSearch {
   padding-top: 30px;
-  margin-left:auto;
-  margin-right:auto;
-  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
-.cards {
+.userCards {
   display: grid;
   margin-top: 100px;
   grid-template-columns: repeat(3, 1fr);
@@ -14,26 +14,26 @@
   width: 90%;
 }
 @media (max-width: 700px) {
-  .cards {
+  .userCards {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card {
+  .userCard {
     width: 200px;
   }
   .title {
-    font-size: 1em
+    font-size: 1em;
   }
   .titleB {
-    font-size: 0.9em
+    font-size: 0.9em;
   }
 }
 
 .searchBody {
-  padding-left:10%
+  padding-left: 10%;
 }
 
 .select {
-  width:40%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,7 +42,7 @@ button a {
   color: black;
 }
 
-.contactButton a:hover{
+.contactButton a:hover {
   background-color: transparent;
 }
 
@@ -52,10 +52,10 @@ button a {
 }
 
 @media (max-width: 700px) {
-  .cards {
+  .userCards {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card {
+  .userCard {
     width: 200px;
   }
   .title {
@@ -65,7 +65,7 @@ button a {
     font-size: 0.9em;
   }
   .searchBody {
-    padding-left:5%
+    padding-left: 5%;
   }
 }
 
@@ -76,29 +76,29 @@ button a {
 }
 
 @media (min-width: 701px) and (max-width: 1200px) {
-  .cards {
+  .userCards {
     grid-template-columns: repeat(2, 1fr);
-  }  
+  }
   .genresCard {
     display: flex;
-    width:fit-content;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    font-size:14px;
+    font-size: 14px;
   }
   .searchBody {
-    padding-left: 2%
+    padding-left: 2%;
   }
   .favMusics {
     padding: 20px;
-    font-size:14px;
+    font-size: 14px;
   }
-  .card {
+  .userCard {
     min-width: 100px;
   }
 }
 
-.card {
+.userCard {
   padding-top: 20px;
   padding-bottom: 20px;
   border: solid;
@@ -117,7 +117,7 @@ button a {
   font-size: 13px;
 }
 
-.card img {
+.userCard img {
   margin-top: 20px;
   background-color: white;
   max-width: 410px;
