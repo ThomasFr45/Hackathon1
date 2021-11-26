@@ -45,7 +45,7 @@ function Search({ radio }) {
         Vous êtes au bon endroit !
       </h3>
       <h4 className="titleB">
-        Vous pouvez rechercher ici parmi nos utilisateurs et validés la personne
+        Vous pouvez rechercher ici parmi nos utilisateurs validés, la personne
         qui vous convient le plus !
       </h4>
       {radio ? (<><audio controls autoplay>
