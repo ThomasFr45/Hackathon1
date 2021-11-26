@@ -16,30 +16,29 @@ import classic from '../../assets/classic.jpg';
 import rock from '../../assets/rock.jpg';
 
 
-export const CarouselComponent = () => {
+export const CarouselComponent = ({ setSearchValue }) => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 500, itemsToShow: 2 },
     { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 4 }
   ] 
-
   return (
       <div className='CarouselComponent'>
           <Carousel breakPoints={breakPoints}> 
-            <CarouselCard image={jazz} name='jazz' genre='Jazz'/>
-            <CarouselCard image={reggae} name='reggae' genre='Reggae'/>
-            <CarouselCard image={rap} name='rap' genre='Rap'/>
-            <CarouselCard image={funk} name='funk' genre='Funk'/>
-            <CarouselCard image={pop} name='pop' genre='Pop'/>
-            <CarouselCard image={latino} name='latin' genre='Latino'/>
-            <CarouselCard image={hiphop} name='hiphop'genre='Hip-hop'/>
-            <CarouselCard image={blues} name='blues' genre='Blues'/>
-            <CarouselCard image={country} name='country' genre='Country'/>
-            <CarouselCard image={soul} name='soul' genre='Soul'/>
-            <CarouselCard image={electro} name='electronic'genre='Electro'/>
-            <CarouselCard image={classic} name='classique'genre='Classique'/>
-            <CarouselCard image={rock} name='rock' genre='Rock'/>
+            <CarouselCard image={jazz} name='jazz' genre='Jazz' setSearchValue={setSearchValue}/>
+            <CarouselCard image={reggae} name='reggae' genre='Reggae' setSearchValue={setSearchValue}/>
+            <CarouselCard image={rap} name='rap' genre='Rap' setSearchValue={setSearchValue}/>
+            <CarouselCard image={funk} name='funk' genre='Funk' setSearchValue={setSearchValue}/>
+            <CarouselCard image={pop} name='pop' genre='Pop' setSearchValue={setSearchValue}/>
+            <CarouselCard image={latino} name='latin' genre='Latino' setSearchValue={setSearchValue}/>
+            <CarouselCard image={hiphop} name='hiphop'genre='Hip-hop' setSearchValue={setSearchValue}/>
+            <CarouselCard image={blues} name='blues' genre='Blues' setSearchValue={setSearchValue}/>
+            <CarouselCard image={country} name='country' genre='Country' setSearchValue={setSearchValue}/>
+            <CarouselCard image={soul} name='soul' genre='Soul' setSearchValue={setSearchValue}/>
+            <CarouselCard image={electro} name='electronic'genre='Electro' setSearchValue={setSearchValue}/>
+            <CarouselCard image={classic} name='classique'genre='Classique' setSearchValue={setSearchValue}/>
+            <CarouselCard image={rock} name='rock' genre='Rock' setSearchValue={setSearchValue}/>
           </Carousel>
       </div>
   );

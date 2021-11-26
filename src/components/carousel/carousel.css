@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.container a:hover {
+  background-color: transparent;
+}
+
 .image {
   display: block;
   width: 90%;

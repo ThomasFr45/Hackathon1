@@ -18,7 +18,8 @@ function App() {
           <Navbar />
           <Banniere title="Premier Hackathon avec la team plop !" />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home radio={false}/>} />
+            <Route path="/listening" element={<Home radio={true}/>} />
             <Route path="/about" element={<About />} />
             <Route path="/profiles/:pseudo" element={<ProfilForm />} />
             <Route path="/:artist/:title" element={<Lyrics />} />
