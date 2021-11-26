@@ -5,11 +5,22 @@ import Navbar from "./Navbar";
 import Banniere from "./Banniere";
 
 const Teachers = () => {
+  const divStyle = {
+    color: 'red',
+  };
   const [search, setSearch] = useState("");
   return (
     <>
       <Navbar />
       <Banniere title="Rencontrez-vous lors des ateliers musicaux proposés par nos intervenants !" />
+
+      <div className="youtube">
+        <p style={divStyle}>Cours en Direct</p>
+        <iframe   src="https://www.youtube.com/embed/GhpXgQ8TOUA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       <div className="teacherContainer">
         <div className="teacherCards">
           <input
