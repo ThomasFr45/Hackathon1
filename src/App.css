@@ -124,7 +124,7 @@ footer p {
 
 .teacherContent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .teacherButton {
@@ -172,6 +172,7 @@ footer p {
 }
 .infos {
   font-size: 13px;
+  padding: 5px;
 }
 
 .ourCard {
