@@ -40,12 +40,12 @@ function Search({ radio }) {
     <div>
       <h3 className="title">
         A la recherche de la personne parfaite pour écouter de la musique ou
-        discuter de vos musiques préférés ensemble ? 
+        discuter de vos musiques préférées ensemble ? 
         <br />
         Vous êtes au bon endroit !
       </h3>
       <h4 className="titleB">
-        Vous pouvez rechercher ici parmis nos utilisateurs et validés la personne
+        Vous pouvez rechercher ici parmi nos utilisateurs et validés la personne
         qui vous convient le plus !
       </h4>
       {radio ? (<><audio controls autoplay>
