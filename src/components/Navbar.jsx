@@ -11,6 +11,9 @@ const Navbar = () => {
         <li>
           <Link to="/activites">Activités</Link>
         </li>
+        <li>
+          <Link to="/profiles">Profil</Link>
+        </li>
         <li style={{ float: "right" }}>
           <Link to="/about">About</Link>
         </li>
