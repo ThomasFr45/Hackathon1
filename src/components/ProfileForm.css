@@ -115,9 +115,6 @@ input {
       }
 
       @media (max-width:900px) {
-        .container{
-          width: 95%;
-        }
         form {
           padding: 0;
         }

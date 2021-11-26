@@ -4,23 +4,23 @@
   text-align: center;
 }
 
-.container {
+.carouselContainer {
   position: relative;
   width: 100%;
 }
 
-.container a:hover {
+.carouselContainer a:hover {
   background-color: transparent;
 }
 
-.image {
+.carouselImage {
   display: block;
   width: 90%;
   height: auto;
   border-radius: 10px;
 }
 
-.overlay {
+.carouselOverlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -33,13 +33,13 @@
   background-color: #5bb1cea1;
 }
 
-.container:hover .overlay {
+.carouselContainer:hover .carouselOverlay {
   opacity: 0.7;
   border-radius: 10px;
  
 }
 
-.text {
+.carouselText {
   color: #FFFFFF;
   text-shadow: 1px 1px 0 #000000;
   font-size: 20px;

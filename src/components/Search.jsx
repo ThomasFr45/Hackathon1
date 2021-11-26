@@ -104,7 +104,7 @@ function Search({ radio }) {
               ))}
             </div>
           ) : (
-            <h4>Essais de rechercher ton genre de musique farovis !</h4>
+            <h4>Recherches ton genre de musique favoris !</h4>
           )}
         </div>
       </div>
