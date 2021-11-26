@@ -16,7 +16,6 @@ const Teachers = () => {
             type="text"
             placeholder="search.."
             className="form-control"
-            style={{ marginTop: 50, marginBottom: 20, width: "40%" }}
             onChange={(e) => {
               setSearch(e.target.value);
             }}
