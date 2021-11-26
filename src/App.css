@@ -83,20 +83,13 @@ footer p {
   margin: 0;
 }
 
-.youtube{
-
-  margin-top:100px;
+.youtube {
+  margin-top: 100px;
 }
 
-
 .teacherCard {
-<<<<<<< HEAD
   background-color: #333;
-  width: 500px;
-=======
-  background-color:#333;
   width: 350px;
->>>>>>> 5e48cb67a88f57c0401a7d2657d625064abea7fa
   display: flex;
   flex-direction: column;
   padding-top: 20px;
