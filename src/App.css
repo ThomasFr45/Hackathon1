@@ -36,14 +36,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-} 
+}
 
 a {
   display: block;
   color: rgb(173, 172, 172);
   text-align: center;
   text-decoration: none;
-} 
+}
 
 a:hover {
   background-color: #111;
@@ -84,7 +84,7 @@ footer p {
 }
 
 .teacherCard {
-  background-color:#333;
+  background-color: #333;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -95,18 +95,18 @@ footer p {
 }
 
 .teacherCard {
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-control {
-  width:400px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .teacherContent {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -162,7 +162,7 @@ footer p {
   padding-bottom: 20px;
   border: solid;
   min-width: 280px;
-  min-height:350px;
+  min-height: 350px;
   margin-left: auto;
   margin-right: auto;
   background-color: #333;
@@ -174,20 +174,21 @@ footer p {
 }
 
 .ourImage {
-  border-radius: 20px
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 .ourName {
   margin-top: 40px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .ourCards {
   display: grid;
-  padding-left:10%;
+  padding-left: 10%;
   margin-top: 100px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   margin-bottom: 150px;
   width: 90%;
-} 
+}
