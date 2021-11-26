@@ -1,10 +1,8 @@
 import { useState } from "react";
-import './ProfileForm.css';
 import Navbar from "./Navbar";
 import Banniere from "./Banniere";
 
-export const ProfilForm = () => {
-
+const Inscription = () => {
   const [name, setName] = useState();
   const [firstName, setFirstName] = useState();
   const [email, setEmail] = useState();
@@ -28,7 +26,7 @@ export const ProfilForm = () => {
       genres: genres,
       song: song,
     }
-    alert(`Bonjour ${name}, votre message à bien été envoyé.`)
+    alert(`Bonjour ${name}, votre inscription à bien été prise en compte.`)
     localStorage.setItem("formData", JSON.stringify(formData));
     setTimeout(()=>  window.location.href = "http://localhost:3000/", 10);
   }
@@ -47,11 +45,6 @@ export const ProfilForm = () => {
       placeholder="Votre prénom" 
       value={firstName} 
       onChange={(e) => setFirstName(e.target.value)} />
-   <input 
-      type="text" 
-      placeholder="Votre chanson du moment" 
-      value={song} 
-      onChange={(e) => setSong(e.target.value)} /><br />
     <input 
       type="text" 
       placeholder="Votre email" 
@@ -107,12 +100,10 @@ export const ProfilForm = () => {
          onClick={() => handleGenres('blues')}>Blues</div>
       <br />
     </div>
-    <div className="divMessage">
-      <label htmlFor="">Message</label>
-      <textarea className="message" name="message" rows="5"></textarea>
-    </div>
     <button className="submitButton" type="submit">Go!</button>
   </form>
   </>
   );
 }
+
+export default Inscription;

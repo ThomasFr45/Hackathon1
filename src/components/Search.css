@@ -5,6 +5,10 @@
   width: 90%;
 }
 
+.containerSearch h4 {
+  margin-top: 10px
+}
+
 .userCards {
   display: grid;
   margin-top: 100px;
@@ -24,6 +28,7 @@
     font-size: 1em;
   }
   .titleB {
+    margin-bottom:20px;
     font-size: 0.9em;
   }
 }
@@ -59,9 +64,10 @@ button a {
     width: 200px;
   }
   .title {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .titleB {
+    margin-bottom:20px;
     font-size: 0.9em;
   }
   .searchBody {
@@ -86,6 +92,12 @@ button a {
     margin-right: auto;
     font-size: 14px;
   }
+  .title {
+    font-size: 1.3em;
+  }
+  .titleB {
+    margin-bottom:40px;
+  }
   .searchBody {
     padding-left: 2%;
   }
@@ -96,6 +108,11 @@ button a {
   .userCard {
     min-width: 100px;
   }
+}
+
+.titleB {
+  font-size:1.4em;
+  margin-bottom:40px;
 }
 
 .userCard {
@@ -131,6 +148,12 @@ button a {
   margin-left: auto;
   margin-right: auto;
   font-size: 14px;
+}
+
+.title {
+margin-top:30px;
+margin-bottom:15px;
+font-size:1.5em;
 }
 
 .favMusics {

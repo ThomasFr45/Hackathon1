@@ -1,5 +1,14 @@
+import Navbar from "./Navbar";
+import Banniere from "./Banniere";
 const About = () => {
-  return <p>Construction en cours</p>;
-}
+  return (
+    <>
+      <Navbar />
+      <Banniere title="Premier Hackathon avec la team plop !" />
 
-export default About
+      <p>Construction en cours</p>
+    </>
+  );
+};
+
+export default About;

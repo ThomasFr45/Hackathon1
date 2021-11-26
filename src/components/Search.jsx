@@ -68,7 +68,7 @@ function Search({ radio }) {
             onChange={(e) => {filter(e.value)}}
           /> 
         </div>
-        <div className="searchBody">
+        <div className={foundUsers && foundUsers.length > 0 ? "searchBody" : null}>
           {foundUsers && foundUsers.length > 0 ? (
             <div className="userCards">
               {foundUsers.map((user) => (

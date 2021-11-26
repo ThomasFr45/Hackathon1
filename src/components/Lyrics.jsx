@@ -1,6 +1,8 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Navbar from "./Navbar";
+import Banniere from "./Banniere";
 
 const Lyrics = () => {
   const { artist, title } = useParams()
@@ -15,12 +17,22 @@ const Lyrics = () => {
     }
     const lyrics = data?.lyrics.split('\n')
     return (
+      <>
+      <Navbar />
+          <Banniere title="Premier Hackathon avec la team plop !" />
       <div className='Lyrics'>
         {lyrics.map((line, index) => index === 0 ? <h4 key={index}>{line} :</h4> : <p key={index}>{line}</p>)}
       </div>
+      </>
     );
   }
-  return <p>Loading</p>
+  return (
+    <>
+    <Navbar />
+          <Banniere title="Premier Hackathon avec la team plop !" />
+  <p>Loading</p>
+  </>
+  )
 }
 
 export default Lyrics
