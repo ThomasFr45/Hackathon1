@@ -40,7 +40,9 @@ function Search({ radio }) {
     <div>
       <h3 className="title">
         A la recherche de la personne parfaite pour écouter de la musique ou
-        discuter de vos musiques préférés ensemble ? <br /> Vous êtes au bon endroit !
+        discuter de vos musiques préférés ensemble ? 
+        <br />
+        Vous êtes au bon endroit !
       </h3>
       <h4 className="titleB">
         Vous pouvez rechercher ici parmis nos utilisateurs et validés la personne
