@@ -6,13 +6,13 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Accueil</Link>
         </li>
         <li>
           <Link to="/teachers">Activités</Link>
         </li>
         <li style={{ float: "right" }}>
-          <Link to="/about">About</Link>
+          <Link to="/about">A propos</Link>
         </li>
       </ul>
     </nav>
