@@ -7,6 +7,7 @@ import Banniere from "./Banniere";
 const Teachers = () => {
   const divStyle = {
     color: 'red',
+    fontSize: "40px",
   };
   const [search, setSearch] = useState("");
   return (
