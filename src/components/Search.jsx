@@ -43,7 +43,7 @@ function Search({ radio }) {
         discuter de vos musiques préférés ensemble ? Vous êtes au bon endroit !
       </h3>
       <h4 className="titleB">
-        Vous pouvez rechercher ici parmis nos utilisateurs validés la personne
+        Vous pouvez rechercher ici parmis nos utilisateurs et validés la personne
         qui vous convient le plus !
       </h4>
       {radio ? (<><audio controls autoplay>

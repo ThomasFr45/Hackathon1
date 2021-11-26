@@ -5,11 +5,11 @@ const Footer = () => {
 
       <div>
         <p className='footerText'>
-          Web site made by wilders while following the WildCodeSchool course.
-          <br />
-          All rights reserved to the WildCodeSchool
-          <br />
-          2021 - 2022
+        Site web réalisé par les wilders en suivant le cours de la WildCodeSchool.
+        <br />
+        Tous les droits sont réservés à la WildCodeSchool.
+        <br />
+        <p>2021-2022</p>
         </p>
       </div>
     </footer>
