@@ -3,12 +3,13 @@ import Navbar from "./components/Navbar";
 import Banniere from "./components/Banniere";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Lyrics from './components/Lyrics';
-import About from './components/About';
+import Lyrics from "./components/Lyrics";
+import About from "./components/About";
 import "./App.css";
+import Teachers from "./components/Teachers";
 import "./components/Search.css";
-import './components/lyrics.css';
-import { ProfilForm } from './components/ProfilForm';
+import "./components/lyrics.css";
+import { ProfilForm } from "./components/ProfilForm";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             <Route path="/:artist/:title" element={<Lyrics />} />
           </Routes>
         </Router>
+        <div>
+          <Teachers />
+        </div>
       </div>
       <Footer />
     </div>
