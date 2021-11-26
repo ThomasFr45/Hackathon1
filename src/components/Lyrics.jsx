@@ -19,7 +19,7 @@ const Lyrics = () => {
     return (
       <>
       <Navbar />
-          <Banniere title="Premier Hackathon avec la team plop !" />
+          <Banniere title="Les ploppers vaincront !" />
       <div className='Lyrics'>
         {lyrics.map((line, index) => index === 0 ? <h4 key={index}>{line} :</h4> : <p key={index}>{line}</p>)}
       </div>

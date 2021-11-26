@@ -33,7 +33,7 @@ const Inscription = () => {
   return (
     <>
     <Navbar />
-          <Banniere title="Premier Hackathon avec la team plop !" />
+          <Banniere title="Voyez fournir vos informations afin de compléter l'inscription !" />
   <form onSubmit={(e) => sendData(e)}>
     <input 
       type="text" 

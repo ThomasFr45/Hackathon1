@@ -9,7 +9,7 @@ const Teachers = () => {
   return (
     <>
       <Navbar />
-      <Banniere title="Premier Hackathon avec la team plop !" />
+      <Banniere title="Rencontrez-vous lors des ateliers musicaux proposés par nos intervenants !" />
       <div className="teacherContainer">
         <div className="teacherCards">
           <input

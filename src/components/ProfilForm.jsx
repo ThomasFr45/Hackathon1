@@ -35,7 +35,7 @@ export const ProfilForm = () => {
   return (
     <>
     <Navbar />
-          <Banniere title="Premier Hackathon avec la team plop !" />
+          <Banniere title="Vous pouvez lui envoyer un message ici !" />
   <form onSubmit={(e) => sendData(e)}>
     <input 
       type="text" 
