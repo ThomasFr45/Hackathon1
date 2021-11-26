@@ -3,13 +3,13 @@ import USERS from "../data.js";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 
-function Search() {
+function Search({ radio }) {
   //const [name, setName] = useState("");
   const [foundUsers, setFoundUsers] = useState();
 
   const filter = (e) => {
     console.log(e);
-    const keyword = e.value;
+    const keyword = e;
 
     if (keyword !== "") {
       const results = USERS.filter((user) => {
@@ -36,7 +36,6 @@ function Search() {
     { value: "Country", label: "Country" },
     { value: "Blues", label: "Blues" },
   ];
-
   return (
     <div>
       <h3 className="title">
@@ -47,6 +46,11 @@ function Search() {
         Vous pouvez rechercher ici parmis nos utilisateurs validés la personne
         qui vous convient le plus !
       </h4>
+      {radio ? (<><audio controls autoplay>
+  <source src="https://mangoradio.stream.laut.fm/mangoradio?t302=2021-11-25_21-19-10&uuid=03086fa9-407e-4f2a-b89e-506962cd4007" type="audio/ogg"/>
+  <source src="https://mangoradio.stream.laut.fm/mangoradio?t302=2021-11-25_21-19-10&uuid=03086fa9-407e-4f2a-b89e-506962cd4007" type="audio/mpeg"/>
+  </audio></>
+) : null}
       <div className="containerSearch">
         {/* <input
           type="search"
@@ -61,12 +65,12 @@ function Search() {
             options={options}
             className="basic-multi-select"
             classNamePrefix="select"
-            onChange={filter}
-          />
+            onChange={(e) => {filter(e.value)}}
+          /> 
         </div>
 
-        <div className='searchBody'>
         {foundUsers && foundUsers.length > 0 ? (
+          <div className='searchBody'>
           <div className="cards">
             {foundUsers.map((user) => (
               <div className="card">
@@ -100,10 +104,10 @@ function Search() {
               </div>
             ))}
           </div>
+          </div>
         ) : (
           <h4>Essais de rechercher ton genre de musique farovis !</h4>
         )}
-        </div>
       </div>
     </div>
   );

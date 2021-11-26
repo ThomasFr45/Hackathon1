@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Banniere from './Banniere'
 import './ProfileForm.css';
 
 export const ProfilForm = () => {
@@ -31,7 +30,6 @@ export const ProfilForm = () => {
     localStorage.setItem("formData", JSON.stringify(formData));
     console.log(formData)
   }
-
   return (
   <form onSubmit={(e) => sendData(e)}>
     <input 
