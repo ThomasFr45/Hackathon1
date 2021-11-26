@@ -8,6 +8,7 @@ body {
 }
 
 .musicMatch{
+
 padding-left: 10px;
 padding-right: 10px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -81,6 +82,27 @@ li a:hover {
 @media (max-width: 700px) {
   .banniere {
     font-size: 0.75em;
+  }
+
+  .musicMatch{
+    display: none;
+  }
+
+  .banniere h1{
+    padding-top: 30px;
+    font-size: 2em;
+  }
+
+  .home-h2{
+    font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .titleB {
+    font-size: 1.2em;
   }
 }
 
