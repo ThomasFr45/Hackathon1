@@ -32,7 +32,7 @@ const Teachers = () => {
               setSearch(e.target.value);
             }}
           />
-          {MockData.filter((val) => {
+          {MockData.filter((val) => (
             if (search === "") {
               return val;
             } else if (
@@ -42,7 +42,7 @@ const Teachers = () => {
             ) {
               return val;
             }
-          }).map((user) => (
+          )).map((user) => (
             <div className="teacherCard">
               <div className="teacherContent">
                 <div>
