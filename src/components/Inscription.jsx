@@ -7,7 +7,6 @@ const Inscription = () => {
   const [firstName, setFirstName] = useState();
   const [email, setEmail] = useState();
   const [age, setAge] = useState();
-  const [song, setSong] = useState();
   const [genres, setGenres] = useState([]);
 
   const handleGenres = (checkedGenre) => {
@@ -24,7 +23,6 @@ const Inscription = () => {
       age: age,
       email: email,
       genres: genres,
-      song: song,
     }
     alert(`Bonjour ${name}, votre inscription à bien été prise en compte.`)
     localStorage.setItem("formData", JSON.stringify(formData));
