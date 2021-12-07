@@ -66,8 +66,9 @@ li a:hover {
 }
 
 @media (max-width: 700px) {
-  .banniere {
-    font-size: 0.75em;
+  .banniere-h1 {
+    font-size: 1.65em;
+    padding-top: 25px;
   }
 }
 

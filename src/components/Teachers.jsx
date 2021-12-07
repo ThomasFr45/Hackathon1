@@ -32,17 +32,12 @@ const Teachers = () => {
               setSearch(e.target.value);
             }}
           />
-          {MockData.filter((val) => {
-            if (search === "") {
-              return val;
-            } else if (
-              val.first_name?.toLowerCase().includes(search.toLowerCase()) ||
-              val.last_name?.toLowerCase().includes(search.toLowerCase()) ||
-              val.music?.toLowerCase().includes(search.toLowerCase())
-            ) {
-              return val;
-            }
-          }).map((user) => (
+          {MockData.filter((val) => (
+            search === "" ? val : (val.first_name?.toLowerCase().includes(search.toLowerCase()) ||
+            val.last_name?.toLowerCase().includes(search.toLowerCase()) ||
+            val.music?.toLowerCase().includes(search.toLowerCase()) ? val : null)
+            )
+          ).map((user) => (
             <div className="teacherCard">
               <div className="teacherContent">
                 <div>
