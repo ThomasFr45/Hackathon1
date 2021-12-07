@@ -6,7 +6,6 @@ import kanye from "../assets/kanye.jpg";
 import pharrell from "../assets/pharrell.jpg";
 import rihanna from "../assets/rihanna.png";
 import sia from "../assets/sia.jpg";
-import { placeholder } from "@babel/types";
 
 const About = () => {
   const musicMatch = [
@@ -58,7 +57,7 @@ const About = () => {
       <div className="ourCards">
         {musicMatch.map((person) => (
           <div className="ourCard">
-            <img className="ourImage" src={person.img} alt="photo artiste" />
+            <img className="ourImage" src={person.img} alt="artiste" />
             <h4 className="ourName">{person.name}</h4>
             <p>
               <a href={person.linkedin}>LinkedIn</a>
