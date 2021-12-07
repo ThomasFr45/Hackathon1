@@ -6,7 +6,6 @@ import kanye from "../assets/kanye.jpg";
 import pharrell from "../assets/pharrell.jpg";
 import rihanna from "../assets/rihanna.png";
 import sia from "../assets/sia.jpg";
-import { placeholder } from "@babel/types";
 
 const About = () => {
   const musicMatch = [
